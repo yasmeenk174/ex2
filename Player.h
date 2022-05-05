@@ -15,12 +15,12 @@ class Player
     void printInfo();
     void levelUp();
     int getLevel();
-    void buff(const int additionalForce&);
-    void heal(const int additionalHP&);
-    void damage(const int damage&);
+    void buff(const int& additionalForce);
+    void heal(const int& additionalHP);
+    void damage(const int& damage);
     bool isKnockedOut();
-    void addcoins(const int additionalCoins&);
-    bool pay(const int price&);
+    void addcoins(const int& additionalCoins);
+    bool pay(const int& price);
     int getAttackStrength();
 
  
