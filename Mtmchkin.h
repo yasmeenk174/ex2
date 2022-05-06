@@ -5,7 +5,9 @@
 #ifndef EX2_GAME_H
 #define EX2_GAME_H
 #include "Card.h"
+#include <string>
 #include <iostream>
+
 
 /*
  * GameStatus:
@@ -61,6 +63,10 @@ public:
 
 private:
     //TODO: complete the Mtmchkin class.
+    string m_playerName;
+    Card* m_cards;
+    int m_numOfCards;
+    GameStatus m_status;
 
 };
 
