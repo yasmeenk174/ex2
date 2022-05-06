@@ -12,7 +12,7 @@ Card::Card(CardType type, const CardStats &stats) : m_effect(type),
 Card::Card()
 {
 }
-void applyEncounter(Player &player)
+void Card::applyEncounter(Player &player) const
 {
     if(m_effect==CardType::Battle)
     {
@@ -48,7 +48,7 @@ void applyEncounter(Player &player)
     }
 }
 
-void printInfo()
+void Card::printInfo() const
 {
     switch (m_effect)
     {
