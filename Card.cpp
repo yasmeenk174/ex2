@@ -2,8 +2,6 @@
 
 #define WIN 1
 
-CardType m_effect;
-CardStats m_stats;
 
 Card::Card(CardType type, const CardStats &stats) : m_effect(type),
                                                     m_stats(stats)
