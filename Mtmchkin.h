@@ -67,6 +67,7 @@ private:
     Card* m_cards;
     int m_numOfCards;
     GameStatus m_status;
+    int currentCard;
 
 };
 
