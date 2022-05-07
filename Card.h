@@ -4,6 +4,10 @@
 #ifndef EX2_Card_H
 #define EX2_Card_H
 
+
+#define WIN 1
+
+
 #include <string>
 #include "Player.h"
 #include "utilities.h"
