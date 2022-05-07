@@ -1,6 +1,6 @@
 #include "Card.h"
 
-#define WIN 1
+
 
 
 Card::Card(CardType type, const CardStats &stats) : m_effect(type),
@@ -17,7 +17,7 @@ void Card::applyEncounter(Player &player) const
         if(m_stats.force<=player.getAttackStrength())
         {
             player.levelUp();
-            player.addcoins(m_stats.loot);
+            player.addCoins(m_stats.loot);
             printBattleResult(WIN);
         }
         else
@@ -42,7 +42,7 @@ void Card::applyEncounter(Player &player) const
     }
     if (m_effect==CardType::Treasure)
     {
-        player.addcoins(m_stats.loot);
+        player.addCoins(m_stats.loot);
     }
 }
 
