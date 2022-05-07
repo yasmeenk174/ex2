@@ -8,6 +8,8 @@
 #include <string>
 #include <iostream>
 
+#define GAME_ENDED 1
+#define FINAL_LEVEL 10
 /*
  * GameStatus:
  * MidGame - The game is still active and the player continues to encounter cards.
@@ -20,6 +22,7 @@ enum class GameStatus
     Loss,
     MidGame
 };
+
 
 class Mtmchkin
 {
@@ -72,7 +75,7 @@ private:
     int m_numOfCards;
     GameStatus m_status;
     int m_currentCard;
-    Player m_Player;
+    Player m_player;
 };
 
 #endif // EX2_GAME_H
