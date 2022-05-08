@@ -38,9 +38,9 @@ public:
      */
     Mtmchkin(const char *playerName, const Card *cardsArray, int numOfCards);
 
-    ~Mtmchikn ();
-    Mtmchikn(const Mtmchikn& game);
-    Mtmchikn operator=(const Mtmchikn& );
+    ~Mtmchkin ();
+    Mtmchkin(const Mtmchkin& game);
+   Mtmchkin&  operator=(const Mtmchkin& );
     /*
      * Play the next Card - according to the instruction in the exercise document
      *
