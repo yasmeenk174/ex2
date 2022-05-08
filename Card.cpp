@@ -1,7 +1,7 @@
 #include "Card.h"
 
 
-
+using namespace Player;
 
 Card::Card(CardType type, const CardStats &stats) : m_effect(type),
                                                     m_stats(stats)

@@ -35,7 +35,7 @@ GameStatus Mtmchkin::getGameStatus() const
 {
     return m_status;
 }
-bool Mtmchkin::isOver()
+bool Mtmchkin::isOver() const
 {
     if (m_status == GameStatus::Win || m_status == GameStatus::Loss)
     {
