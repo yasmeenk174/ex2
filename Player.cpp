@@ -1,7 +1,7 @@
 #include "Player.h"
 
 Player::Player(const string name, int Max_HP, int force)
-:m_name(name),m_maxHP(Max_HP>0?Max_HP:DEFAULT_MAXHP),m_force(force>0?force:DEFAULT_FORCE),m_coins(DEFAULT_COINS),m_level(DEFAULT_LEVEL),m_HP(m_maxHP)
+:m_name(name),m_level(DEFAULT_LEVEL),m_force(force>0?force:DEFAULT_FORCE),m_maxHP(Max_HP>0?Max_HP:DEFAULT_MAXHP),m_HP(m_maxHP),m_coins(DEFAULT_COINS)
 {
 }
 

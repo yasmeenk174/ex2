@@ -34,7 +34,7 @@ public:
      * @result
      *       copying the excisting player into a new one.
      */
-    Player(const Player &Player)=default;
+    Player(const Player &)=default;
 
     /*
      * Player(destructor):
@@ -49,7 +49,7 @@ public:
      * @result
      *        coping the exsisting player into the player.
      */
-    Player &operator=(const Player &)=default;
+    Player& operator=(const Player& other )=default;
 
     /*
      * printInfo:
@@ -139,7 +139,7 @@ private:
     int m_force;
     const int m_maxHP;
     int m_HP;
-    unsigned int m_coins;
+     int m_coins;
 };
 
 #endif

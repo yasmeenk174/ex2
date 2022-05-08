@@ -26,7 +26,7 @@ Mtmchkin::Mtmchkin(const Mtmchkin& game): m_playerName(game.m_playerName),m_card
     
 }
 
-Mtmchkin& Mtmchkin::operator=(const Mtmchkin& game )
+/*Mtmchkin& Mtmchkin::operator=(const Mtmchkin& game )
 {
     if(&game==this)
     {
@@ -44,7 +44,7 @@ Mtmchkin& Mtmchkin::operator=(const Mtmchkin& game )
         m_cards[i]=game.m_cards[i];
     }
    return *this;
-}
+}*/
 void Mtmchkin::playNextCard()
 {
     if (m_currentCard == m_numOfCards)

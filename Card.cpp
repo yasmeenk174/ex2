@@ -1,15 +1,13 @@
 #include "Card.h"
 
 
-using namespace Player;
+
 
 Card::Card(CardType type, const CardStats &stats) : m_effect(type),
                                                     m_stats(stats)
 {
 }
-Card::Card()
-{
-}
+
 void Card::applyEncounter(Player &player) const
 {
     if(m_effect==CardType::Battle)

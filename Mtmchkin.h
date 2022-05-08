@@ -40,7 +40,7 @@ public:
 
     ~Mtmchkin ();
     Mtmchkin(const Mtmchkin& game);
-   Mtmchkin&  operator=(const Mtmchkin& );
+   Mtmchkin&  operator=(const Mtmchkin& game );
     /*
      * Play the next Card - according to the instruction in the exercise document
      *
