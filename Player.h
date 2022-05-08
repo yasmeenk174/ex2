@@ -1,6 +1,14 @@
 #ifndef EX2_Player_H
 #define EX2_Player_H
 
+
+#define DEFAULT_FORCE 5
+#define DEFAULT_MAXHP 100
+#define DEFAULT_COINS 0
+#define DEFAULT_LEVEL 1
+#define FINAL_LEVEL 10
+
+
 #include <string>
 #include "utilities.h"
 using namespace std;
@@ -106,7 +114,7 @@ public:
      * @result
      *       adding the wanted amount of coins to the player.
      */
-    void addcoins(const int &additionalCoins);
+    void addCoins(const int &additionalCoins);
 
     /*
      *pay

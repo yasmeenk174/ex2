@@ -1,7 +1,7 @@
 #include "Player.h"
 
 Player::Player(const string name, int Max_HP, int force)
-:m_name(name),m_maxHP(Max_HP>0?Max_HP:100),m_force(force>0?force:5),m_coins(0),m_level(1),m_HP(m_maxHP)
+:m_name(name),m_maxHP(Max_HP>0?Max_HP:DEFAULT_MAXHP),m_force(force>0?force:DEFAULT_FORCE),m_coins(DEFAULT_COINS),m_level(DEFAULT_LEVEL),m_HP(m_maxHP)
 {
 }
 
@@ -11,7 +11,7 @@ void Player::printInfo()
 }
 void Player::levelUp()
 {
-   if (m_level <= 9)
+   if (m_level < FINAL_LEVEL)
    {
       m_level++;
    }
@@ -60,7 +60,7 @@ bool Player::isKnockedOut()
 {
    return (m_HP == 0);
 }
-void Player::addcoins(const int &additionalCoins)
+void Player::addCoins(const int &additionalCoins)
 {
    if (additionalCoins > 0)
    {
