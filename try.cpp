@@ -4,7 +4,7 @@
 #include <stdbool.h>
 #include "utilities.h"
 
-int main()
+/*int main()
 {
    CardStats stats(2,3,4,6,6);
    CardStats temp(stats);
@@ -13,4 +13,4 @@ int main()
    //Card card(CardType::Battle,stats);
    return 0; 
 
-}
+}*/
