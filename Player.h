@@ -137,9 +137,9 @@ private:
     string m_name;
     int m_level;
     int m_force;
-    const int m_maxHP;
+    int m_maxHP;
     int m_HP;
-     int m_coins;
+    int m_coins;
 };
 
 #endif

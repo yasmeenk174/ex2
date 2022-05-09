@@ -22,25 +22,22 @@ m_player(game.m_player)
 {   
 }
 
-/*Mtmchkin& Mtmchkin::operator=(const Mtmchkin& game )
+Mtmchkin& Mtmchkin::operator=(const Mtmchkin& game )
 {
     if(&game==this)
     {
         return *this;
     }
-    delete [] m_cards;
+   
      m_status=game.m_status;
     m_playerName=game.m_playerName;
     m_player=game.m_player;
     m_numOfCards=game.m_numOfCards;
-    m_currentCard=game.m_currentCard;
-    int i;
-    for ( i = 0; i < m_numOfCards; i++)
-    {
-        m_cards[i]=game.m_cards[i];
-    }
-   return *this;
-}*/
+    m_currentCard=game.m_currentCard; 
+    delete [] m_cards;
+    m_cards=copyCardArray(game.m_cards,game.m_numOfCards);
+    return *this;
+}
 void Mtmchkin::playNextCard()
 {
     if (m_currentCard == m_numOfCards)
