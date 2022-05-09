@@ -5,7 +5,7 @@
 #define EX2_Card_H
 
 
-#define WIN 1
+
 
 
 #include <string>
