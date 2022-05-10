@@ -69,8 +69,13 @@ void Player::addCoins(const int &additionalCoins)
 }
 bool Player::pay(const int &price)
 {
-   if (price <= m_coins && price > 0)
+   if(price<=0) 
    {
+      return true;
+   }
+   if (price <= m_coins)
+   {
+      
       m_coins -= price;
       return true;
    }
