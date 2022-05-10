@@ -5,7 +5,7 @@
 #define EX2_Card_H
 
 
- const int  WIN= 1;
+
 
 
 #include <string>

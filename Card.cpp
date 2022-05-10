@@ -1,6 +1,6 @@
 #include "Card.h"
 
-
+ const int  WIN= 1;
 
 
 Card::Card(CardType type, const CardStats &stats) : m_effect(type),
