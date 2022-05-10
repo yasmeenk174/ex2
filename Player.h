@@ -16,7 +16,7 @@ using namespace std;
 class Player
 {
 public:
-    /*
+    /**
      * Player(constructor):
      *
      * @param playerName - The name of the player.
@@ -27,7 +27,7 @@ public:
      */
     Player(const string playerName, int Max_HP = 100, int force = 5);
 
-    /*
+    /**
      * Player(copy constructor):
      *
      * @param player-excisting player.
@@ -36,14 +36,14 @@ public:
      */
     Player(const Player &)=default;
 
-    /*
+    /**
      * Player(destructor):
      * @result
      *        deleting the player.
      */
     ~Player()=default;
 
-    /*
+    /**
      *operator=
      * @param an existing player.
      * @result
@@ -51,14 +51,14 @@ public:
      */
     Player& operator=(const Player& other )=default;
 
-    /*
+    /**
      * printInfo:
      * @result
      *       prints the players info
      */
     void printInfo();
 
-    /*
+    /**
      * levelUp:
      * @result
      *       icreases the players level.
@@ -66,14 +66,14 @@ public:
      */
     void levelUp();
 
-    /*
+    /**
      * getLevel:
      * @return
      *        returns the players level.
      */
     int getLevel();
 
-    /*
+    /**
      *buff
      * @param additionalForce- additional force to add to the player.
      * @result
@@ -81,7 +81,7 @@ public:
      */
     void buff(const int &additionalForce);
 
-    /*
+    /**
      *heal
      *
      * @param additionalHP-amount of health points we want to add.
@@ -90,7 +90,7 @@ public:
      */
     void heal(const int &additionalHP);
 
-    /*
+    /**
      *damage
      *
      * @param damage- the damage done to the player.
@@ -99,7 +99,7 @@ public:
      */
     void damage(const int &damage);
 
-    /*
+    /**
      *isKnockedOut
      * @return
      *  True if the player's health points are 0.
@@ -107,7 +107,7 @@ public:
      */
     bool isKnockedOut();
 
-    /*
+    /**
      *addcoins
      *
      * @param additionalCoins- amount of coins to add.
@@ -116,7 +116,7 @@ public:
      */
     void addCoins(const int &additionalCoins);
 
-    /*
+    /**
      *pay
      *
      * @param price- amount of coins to pay .
@@ -126,7 +126,7 @@ public:
      */
     bool pay(const int &price);
 
-    /*
+    /**
      *getAttackStrength
      * @return
      *       the players force plus it's level.

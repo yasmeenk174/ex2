@@ -26,7 +26,7 @@ enum class GameStatus
 class Mtmchkin
 {
 public:
-    /*
+    /**
      * C'tor of the game:
      *
      * @param playerName - The name of the player.
@@ -36,11 +36,26 @@ public:
      *      An instance of Mtmchkin
      */
     Mtmchkin(const char *playerName, const Card *cardsArray, int numOfCards);
-
+    /**
+     * @brief Destroy the Mtmchkin object
+     * 
+     */
     ~Mtmchkin ();
+    /**
+     * @brief Construct a new Mtmchkin object
+     * 
+     * @param game the game we want to copy
+     * @return the new copied game
+     */
     Mtmchkin(const Mtmchkin& game);
+    /**
+     * @brief assignment function for game 
+     * 
+     * @param game the game that is assigned to the current game (*this)
+     * @return the current game (*this)
+     */
    Mtmchkin&  operator=(const Mtmchkin& game );
-    /*
+    /**
      * Play the next Card - according to the instruction in the exercise document
      *
      * @return
@@ -48,7 +63,7 @@ public:
      */
     void playNextCard();
 
-    /*
+    /**
      *  Check if the game ended:
      *
      *  @return
@@ -57,7 +72,7 @@ public:
      */
     bool isOver() const;
 
-    /*
+    /**
      *  Get the status of the game:
      *
      *  @return
@@ -65,10 +80,8 @@ public:
      */
     GameStatus getGameStatus() const;
 
-    // TODO: complete the Mtmchkin class.
 
 private:
-    // TODO: complete the Mtmchkin class.
     string m_playerName;
     Card *m_cards;
     int m_numOfCards;
