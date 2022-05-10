@@ -8,8 +8,7 @@
 #include <string>
 #include <iostream>
 
-#define GAME_ENDED 1
-#define FINAL_LEVEL 10
+ const int  GAME_ENDED =1;
 /*
  * GameStatus:
  * MidGame - The game is still active and the player continues to encounter cards.

@@ -2,11 +2,11 @@
 #define EX2_Player_H
 
 
-#define DEFAULT_FORCE 5
-#define DEFAULT_MAXHP 100
-#define DEFAULT_COINS 0
-#define DEFAULT_LEVEL 1
-#define FINAL_LEVEL 10
+const int DEFAULT_FORCE =5;
+const int DEFAULT_MAXHP= 100;
+const int DEFAULT_COINS =0;
+const int DEFAULT_LEVEL =1;
+const int FINAL_LEVEL =10;
 
 
 #include <string>

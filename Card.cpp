@@ -1,7 +1,7 @@
 #include "Card.h"
 
 
-#define WIN 1
+
 
 Card::Card(CardType type, const CardStats &stats) : m_effect(type),
                                                     m_stats(stats)
